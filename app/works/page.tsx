@@ -15,8 +15,8 @@ function page() {
             "Experience Creativity"
           </h1>
           <p className="text-gray-400 text-lg my-4 w-auto lg:w-96">
-            I've come a long way from the begining.I'm not there yet,but I'm on
-            my way
+            I've come a long way from the begining.I'm not there yet , but I'm
+            on my way
           </p>
         </div>
 
