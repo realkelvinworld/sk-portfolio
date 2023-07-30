@@ -12,7 +12,7 @@ export default function Home() {
             I'm Kelvin Kumordzi{" "}
           </h1>
           <ul className="text-xl text-gray-400 mt-5 list-disc">
-            <li>Front-end Developer</li>
+            <li>Front-end web Developer</li>
             <li>UI/UX designer</li>
           </ul>
         </div>
