@@ -5,7 +5,7 @@ export function BtnPrimary({ text, link, hideNav }: BtnProps) {
   return (
     <Link
       href={link}
-      className=" flex flex-nowrap lg:text-3xl text-gray-400  px-4 py-2 hover:bg-opacity-60 hover:transition-all text-sm hover:duration-700 hover:ease-in-out"
+      className=" flex flex-nowrap lg:text-3xl text-gray-400  px-4 py-2 hover:bg-opacity-60 hover:transition-all text-xl hover:duration-700 hover:ease-in-out"
       onClick={hideNav}
     >
       <span className="">{text}</span>

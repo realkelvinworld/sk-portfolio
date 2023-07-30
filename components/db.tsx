@@ -1,6 +1,6 @@
 export const Navlinks = [
-  { id: 1, name: "works", link: "https://pentvars.edu.gh/" },
-  { id: 2, name: "contact", link: "/" },
+  { id: 1, name: "works", link: "works" },
+  { id: 2, name: "contact", link: "/contact" },
   { id: 3, name: "blog", link: "/courses" },
 ];
 import { GitHub, Twitter, Mail } from "react-feather";

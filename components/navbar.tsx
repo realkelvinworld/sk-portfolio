@@ -170,10 +170,10 @@ export default function Navbar() {
             </div>
             <div className="flex items-center space-x-6 px-4">
               {/* talk to us */}
-              <div className="rounded-full border border-yellow-500">
+              <div className="">
                 <BtnPrimary
                   link="https://pentvars.edu.gh/contact-us/"
-                  text="Talk to us"
+                  text="kelvin"
                   hideNav={hideMenu}
                 />
               </div>
@@ -185,7 +185,7 @@ export default function Navbar() {
                 >
                   {/* the btn */}
                   <span
-                    className={`h-[2px] w-full transform cursor-pointer rounded-lg bg-blue-800 mix-blend-difference transition duration-300 ease-in-out 
+                    className={`h-[2px] w-full transform cursor-pointer rounded-lg bg-white mix-blend-difference transition duration-300 ease-in-out 
                   ${openBtn ? "translate-y-2.5 rotate-45 bg-blue-800" : ""}
                   `}
                   />
@@ -195,7 +195,7 @@ export default function Navbar() {
                   `}
                   />
                   <span
-                    className={`h-[2px] w-full transform  cursor-pointer rounded-lg bg-blue-800 mix-blend-difference transition duration-300 ease-in-out
+                    className={`h-[2px] w-full transform  cursor-pointer rounded-lg bg-white mix-blend-difference transition duration-300 ease-in-out
                   ${openBtn ? "-translate-y-3 -rotate-45 bg-blue-800" : ""}
                   `}
                   />
