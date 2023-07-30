@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Footer from "@/components/footer";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (

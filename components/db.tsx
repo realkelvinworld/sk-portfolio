@@ -57,3 +57,37 @@ export const Socials = [
     ),
   },
 ];
+
+export const works = [
+  {
+    id: 1,
+    name: "Webncos",
+    link: "https://webncos.com",
+    description: "A development agency",
+  },
+  {
+    id: 2,
+    name: "Just Guess",
+    link: "https://justguess.netlify.app/",
+    description: "A guessing game",
+  },
+  {
+    id: 3,
+    name: "Pentecost University IDC",
+    link: "http://pentvarsidc.com/",
+    description: "A dedicated tech department",
+  },
+  {
+    id: 4,
+    name: "Events",
+    link: "https://eventsp1.netlify.app/",
+    // decription: "An events site template",
+    description: "An events site template",
+  },
+  {
+    id: 5,
+    name: "Dice Roll",
+    link: "https://dicereollgame.netlify.app/",
+    description: "A strategy game",
+  },
+];

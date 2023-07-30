@@ -79,7 +79,7 @@ function page() {
                 className="border-4 border-gray-600 pt-2 pb-2 pl-8 pr-8 rounded-3xl text-2xl hover:transform hover:scale-110 transition duration-300 hover:border-gray-200 hover:text-gray-200 mb-4 lg:text-2xl "
               />
               {/* Terms and policies */}
-              <p className="text-center text-xl text-gray-500">
+              <p className="text-center px-6 text-xl text-gray-500">
                 By Submiting You Have Agreed To Our <br />{" "}
                 <span className="text-gray-200">Terms & Agreements </span>
                 and <span className="text-gray-200"> Privacy Policy </span>
