@@ -64,12 +64,12 @@ export default function Navbar() {
           {/* Kelvin text  */}
 
           {/* navlinks */}
-          <div className="flex w-auto items-center justify-center">
+          <div className="flex  w-auto items-center justify-center">
             <div
-              className={`fixed top-4 flex w-full items-center justify-around px-2 py-2 ${
+              className={`fixed top-4  rounded-full lg:px-28 flex w-3/4 items-center justify-around px-2 py-2 ${
                 !navColor
-                  ? "bg-primary-background"
-                  : "bg-opacity-30 backdrop-blur-lg backdrop-filter"
+                  ? "bg-primary-background "
+                  : "bg-opacity-30 backdrop-blur-lg backdrop-filter border-2 border-gray-400"
               }`}
             >
               <div className="flex">
