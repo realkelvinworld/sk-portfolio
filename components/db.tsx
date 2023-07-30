@@ -1,7 +1,7 @@
 export const Navlinks = [
   { id: 1, name: "works", link: "works" },
   { id: 2, name: "contact", link: "/contact" },
-  { id: 3, name: "blog", link: "/courses" },
+  { id: 3, name: "blog", link: "/blog" },
 ];
 import { GitHub, Twitter, Mail } from "react-feather";
 import { Snapchat, Whatsapp } from "iconsax-react";

@@ -29,8 +29,8 @@ export default function Home() {
             <p className="text-xl">
               Born in 2002 in Accra-Ghana.A computer Science major and a tech
               enthusiast.I am not your usual artist with a paint brush in my
-              hand scribbling lines and connecting dots but i can i can design.I
-              am pursuing new expressions through experiments and thoughts.
+              hand scribbling lines and connecting dots but i can design.I am
+              pursuing new expressions through experiments and thoughts.
             </p>
           </div>
         </div>

@@ -74,14 +74,11 @@ export default function Navbar() {
             >
               <div className="flex">
                 <div className=" p-0.5">
-                  <BtnPrimary
-                    link="https://pentvars.edu.gh/contact-us/"
-                    text="kelvin"
-                  />
+                  <BtnPrimary link="/" text="kelvin" />
                 </div>
               </div>
               {/* logo */}
-              <Link href="https://pentvars.edu.gh/">
+              <Link href="/">
                 <div className="mr-16 w-12">
                   <Image src={Logo} alt="Logo" className="" />
                 </div>
@@ -123,7 +120,7 @@ export default function Navbar() {
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -10, opacity: 0 }}
-                className="fixed inset-0 bg-white"
+                className="fixed inset-0 grains"
               >
                 <div className="flex h-full w-full flex-col pt-28">
                   {/* border top and grid bg */}
@@ -131,7 +128,7 @@ export default function Navbar() {
                   <div className="absolute inset-0 z-10  bg-opacity-20 bg-gradient-to-t from-primary-border/50 via-transparent to-primary-border/50" />
                   <div className="relative z-20 flex w-full justify-between ">
                     <div className="w-10 "></div>
-                    <div className="flex flex-1 flex-col items-center  font-black">
+                    <div className="flex flex-1 flex-col items-center text-gray-400 ">
                       {Navlinks.map((data, i) => {
                         const { id, link, name } = data;
                         return (
@@ -162,7 +159,7 @@ export default function Navbar() {
           <div className="fixed inset-x-4 top-4 flex items-center justify-between rounded-full border border-primary-border bg-opacity-30 px-2 py-2 backdrop-blur-lg backdrop-filter">
             <div>
               {/* logo */}
-              <Link href="https://pentvars.edu.gh/">
+              <Link href="/">
                 <div className="p-2">
                   <Image src={Logo} className="w-12" alt="Logo" />
                 </div>
@@ -171,11 +168,7 @@ export default function Navbar() {
             <div className="flex items-center space-x-6 px-4">
               {/* talk to us */}
               <div className="">
-                <BtnPrimary
-                  link="https://pentvars.edu.gh/contact-us/"
-                  text="kelvin"
-                  hideNav={hideMenu}
-                />
+                <BtnPrimary link="/" text="kelvin" hideNav={hideMenu} />
               </div>
               {/* hamburger menu */}
               <div className="flex w-6 items-center justify-end">
