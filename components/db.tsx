@@ -3,8 +3,8 @@ export const Navlinks = [
   { id: 2, name: "contact", link: "/contact" },
   { id: 3, name: "blog", link: "/blog" },
 ];
-import { GitHub, Twitter, Mail } from "react-feather";
-import { Snapchat, Whatsapp } from "iconsax-react";
+import { GitHub, Twitter, Mail, Linkedin } from "react-feather";
+import { Whatsapp } from "iconsax-react";
 export const Socials = [
   {
     id: 1,
@@ -39,10 +39,10 @@ export const Socials = [
   {
     id: 3,
     name: "Mail",
-    link: "https://t.snapchat.com/xepAWXS6",
+    link: "https://www.linkedin.com/in/kelvin-kumordzi-2276a61ba/",
     icon: (
       <span>
-        <Snapchat className="h-7 w-7" />
+        <Linkedin className="h-7 w-7" />
       </span>
     ),
   },

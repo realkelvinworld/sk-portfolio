@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function page() {
   return (
-    <div className=" flex flex-col w-full px-6 lg:px-14 mt-20">
+    <div className=" flex flex-col w-full px-6 lg:px-14 mt-20 pb-10 lg:mb-0 ">
       <section className="border-2  border-gray-500">
         <div className="pl-10 pr-10 text-center flex items-center justify-center">
           <h1 className=" pt-6 text-2xl tracking-wide text-gray-400 cursor-pointer">

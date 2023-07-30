@@ -78,11 +78,11 @@ export default function Navbar() {
                 </div>
               </div>
               {/* logo */}
-              <Link href="/">
+              {/* <Link href="/">
                 <div className="mr-16 w-12">
                   <Image src={Logo} alt="Logo" className="" />
                 </div>
-              </Link>
+              </Link> */}
               <div className="flex text-3xl text-gray-400">
                 {Navlinks.map((data) => {
                   const { id, link, name } = data;
@@ -159,17 +159,22 @@ export default function Navbar() {
           <div className="fixed inset-x-4 top-4 flex items-center justify-between rounded-full border border-primary-border bg-opacity-30 px-2 py-2 backdrop-blur-lg backdrop-filter">
             <div>
               {/* logo */}
-              <Link href="/">
+              {/* <Link href="/">
                 <div className="p-2">
                   <Image src={Logo} className="w-12" alt="Logo" />
                 </div>
-              </Link>
-            </div>
-            <div className="flex items-center space-x-6 px-4">
-              {/* talk to us */}
+              </Link> */}
+
+              {/* Kelvin text */}
               <div className="">
                 <BtnPrimary link="/" text="kelvin" hideNav={hideMenu} />
               </div>
+            </div>
+            <div className="flex items-center space-x-6 px-4">
+              {/* Kelvin text
+              <div className="">
+                <BtnPrimary link="/" text="kelvin" hideNav={hideMenu} />
+              </div> */}
               {/* hamburger menu */}
               <div className="flex w-6 items-center justify-end">
                 <div

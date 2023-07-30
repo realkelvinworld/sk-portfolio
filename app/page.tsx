@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className=" mt-10 px-10 lg:px-14 ">
-      <section className="mt-24 border-2 px-10  border-gray-500">
+    <main className=" mt-10 px-10 lg:px-14 pb-10 lg:mb-0 ">
+      <section className="mt-24 border-2 px-10 border-gray-500">
         {/* <hr className="bg-gray-700  h-0.5" /> */}
         <div className="pb-20">
           <h1 className="text-5xl lg:text-7xl bg-gradient-to-r from-gray-500 to-gray-100 bg-clip-text text-transparent">

@@ -14,7 +14,7 @@ function Footer() {
           </p>
         </div>
         <div className="px-2">
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4">
             {Socials.map((socialIcon) => {
               const { icon, id, link } = socialIcon;
               return (
@@ -23,7 +23,7 @@ function Footer() {
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-10 w-10 flex-col items-center text-gray-400 hover:text-gray-200 justify-center rounded-full"
+                    className="flex h-10 w-10 flex-col items-center text-gray-300 hover:text-gray-200 justify-center rounded-full"
                   >
                     <span>{icon}</span>
                   </Link>
