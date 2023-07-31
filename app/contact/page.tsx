@@ -3,49 +3,50 @@ import Footer from "@/components/footer";
 import { formDataProps } from "@/types/props";
 import Image from "next/image";
 import { useState } from "react";
-// import { MeStar } from "../components/img";
 
-function page() {
-  //   const [SubmitBtn, setSubmitBtn] = useState("Submit Message");
-  //   const [fullName, setFullName] = useState("");
-  //   const [phoneNumber, setPhoneNumber] = useState("");
-  //   const [email, setEmail] = useState("");
-  //   const messageID = `#${services.slice(0, 1)}${newtoday}${contact.slice(
-  //     -3
-  //   )}${firstName.slice(0, 3)}`;
-  //   const [copied, setCopied] = useState(false);
-  //   const [complete, setComplete] = useState(false);
+export default function Page() {
+  const [SubmitBtn, setSubmitBtn] = useState("Submit Message");
+  const [fullName, setFullName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const newtoday = new Date().getFullYear;
+  const messageID = `#${newtoday}${phoneNumber.slice(-3)}${fullName.slice(
+    0,
+    3
+  )}`;
+  const [copied, setCopied] = useState(false);
+  const [complete, setComplete] = useState(false);
 
-  //   const formData: formDataProps = {
-  //     fullName,
-  //     email,
-  //     phoneNumber: Number(contact),
-  //     messageID,
-  //     message,
-  //     
-  //   };
+  const formData: formDataProps = {
+    fullName,
+    email,
+    phoneNumber,
+    messageID,
+    message,
+  };
 
   // when form is submitted
-  // const handleOnSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   setSubmitBtn("Submitting...");
-  //   try {
-  //     const res = await fetch("sendmail", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "Aplication/json",
-  //       },
-  //       body: JSON.stringify(formData),
-  //     });
-  //     console.log(res.status);
-  //     if (res.status === 200) {
-  //       setSubmitBtn("Message Submitted");
-  //     }
-  //   } catch (error) {
-  //     setSubmitBtn("Try Again");
-  //   }
-  //   console.log("Message Sent 🚀🚀🚀");
-  // };
+  const handleOnSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitBtn("Submitting...");
+    try {
+      const res = await fetch("sendmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "Aplication/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      console.log(res.status);
+      if (res.status === 200) {
+        setSubmitBtn("Message Submitted");
+      }
+    } catch (error) {
+      setSubmitBtn("Try Again");
+    }
+    console.log("Message Sent 🚀🚀🚀");
+  };
 
   return (
     <div className=" flex flex-col w-full px-6 lg:px-14 mt-20 pb-10 lg:mb-0 ">
@@ -64,7 +65,7 @@ function page() {
         </div>
         {/* Form goes here */}
         <section className="">
-          <form className="text-gray-700">
+          <form className="text-gray-700" onSubmit={handleOnSubmit}>
             <div className="flex items-center justify-around">
               {/* Name */}
               <input
@@ -73,6 +74,7 @@ function page() {
                 name="fullname"
                 placeholder="Full Name"
                 className="bg-transparent mt-2 pt-5 pb-5 border-b  text-gray-400 text-2xl outline-none max md:w-[60vw]  lg:text-2xl"
+                onChange={(e) => setFullName(e.target.value)}
               />
             </div>
 
@@ -84,6 +86,7 @@ function page() {
                 name="phonenumber"
                 placeholder="Phone Number"
                 className="bg-transparent mt-8 pt-5 pb-5 border-b  text-gray-400 text-2xl outline-none md:w-[60vw] lg:text-2xl"
+                onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </div>
             {/* Email Address */}
@@ -94,6 +97,7 @@ function page() {
                 name="email"
                 placeholder="Email Address"
                 className="bg-transparent mt-8 pt-5 pb-5 border-b  text-gray-400 text-2xl outline-none md:w-[60vw] lg:text-2xl"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             {/* Description */}
@@ -103,6 +107,7 @@ function page() {
                 name="project"
                 placeholder="Describe your project"
                 className="bg-transparent mt-8 pt-5 pb-5 border-b text-gray-400 text-2xl outline-none md:w-[60vw] lg:text-2xl"
+                onChange={(e) => setMessage(e.target.value)}
               />
             </div>
 
@@ -130,5 +135,4 @@ function page() {
   );
 }
 
-export default page;
 // Media queries for sizing everything on the page

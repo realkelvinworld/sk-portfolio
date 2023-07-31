@@ -6,7 +6,7 @@ export type BtnProps = {
 export type formDataProps = {
   fullName: string;
   email: string;
-  contact: number;
+  phoneNumber: string;
   messageID: string;
   message: string;
 };
