@@ -4,7 +4,7 @@ export type BtnProps = {
   hideNav?: any;
 };
 export type formDataProps = {
-  firstName: string;
+  fullName: string;
   lastName: string;
   emailAddress: string;
   contact: number;

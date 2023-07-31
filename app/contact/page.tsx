@@ -1,8 +1,58 @@
+"use client";
 import Footer from "@/components/footer";
+import { formDataProps } from "@/types/props";
 import Image from "next/image";
+import { useState } from "react";
 // import { MeStar } from "../components/img";
 
 function page() {
+  const [SubmitBtn, setSubmitBtn] = useState("Submit Message");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [contact, setContact] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [message, setMessage] = useState("");
+  const [services, setServices] = useState(servicename);
+  const messageID = `#${services.slice(0, 1)}${newtoday}${contact.slice(
+    -3
+  )}${firstName.slice(0, 3)}`;
+  const [copied, setCopied] = useState(false);
+  const [complete, setComplete] = useState(false);
+
+  const formData: formDataProps = {
+    fullName,
+    emailAddress,
+    contact: Number(contact),
+    messageID,
+    companyName,
+    message,
+    services,
+    lastName: "",
+  };
+
+  // when form is submitted
+  const handleOnSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitBtn("Submitting...");
+    try {
+      const res = await fetch("sendmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "Aplication/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      console.log(res.status);
+      if (res.status === 200) {
+        setSubmitBtn("Message Submitted");
+      }
+    } catch (error) {
+      setSubmitBtn("Try Again");
+    }
+    console.log("Message Sent 🚀🚀🚀");
+  };
+
   return (
     <div className=" flex flex-col w-full px-6 lg:px-14 mt-20 pb-10 lg:mb-0 ">
       <section className="border-2  border-gray-500">
