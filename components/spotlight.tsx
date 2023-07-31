@@ -29,7 +29,7 @@ export default function SpotlightContainer({
           style={{
             background: useMotionTemplate`
             radial-gradient(
-              500px circle at ${mouseX}px ${mouseY}px,
+              300px circle at ${mouseX}px ${mouseY}px,
               #ffffff39,
               transparent 60%
             )
