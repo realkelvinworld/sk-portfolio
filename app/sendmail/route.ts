@@ -26,77 +26,77 @@ type ResponseData = {
   message?: string;
 };
 
-export async function POST(request: Request) {
-  let response: ResponseData = {};
-  const formData: formDataProps = await request.json();
-  const {
-    companyName,
-    contact,
-    emailAddress,
-    firstName,
-    lastName,
-    message,
-    messageID,
-    services,
-  } = formData;
-  // React Email Call
-  const emailHtml = render(Contact({ formData }));
-//   const listId = MP_AUDIENCE_ID!;
-//   const subscriberHash = md5(emailAddress.toLowerCase());
-//   const subscribingUser = {
-//     firstName: firstName,
-//     lastName: lastName,
-//     email: emailAddress,
-//     phone: contact,
-//     text: message,
-  };
+// export async function POST(request: Request) {
+//   let response: ResponseData = {};
+//   const formData: formDataProps = await request.json();
+//   const {
+//     companyName,
+//     contact,
+//     emailAddress,
+//     firstName,
+//     lastName,
+//     message,
+//     messageID,
+//     services,
+//   } = formData;
+//   // React Email Call
+//   const emailHtml = render(Contact({ formData }));
+// //   const listId = MP_AUDIENCE_ID!;
+// //   const subscriberHash = md5(emailAddress.toLowerCase());
+// //   const subscribingUser = {
+// //     firstName: firstName,
+// //     lastName: lastName,
+// //     email: emailAddress,
+// //     phone: contact,
+// //     text: message,
+//   };
 
-  // console.log(
-  //    form.firstName,
-  //    form.lastName,
-  //    form.emailAddress,
-  //    form.contact,
-  //    form.messageID,
-  //    form.message,
-  //    form.budget,
-  //    form.project
-  // );
+//   // console.log(
+//   //    form.firstName,
+//   //    form.lastName,
+//   //    form.emailAddress,
+//   //    form.contact,
+//   //    form.messageID,
+//   //    form.message,
+//   //    form.budget,
+//   //    form.project
+//   // );
 
-  const msg = {
-    to: "iamjuliuseghan@gmail.com",
-    cc: "kelvin@webncos.com",
-    bcc: "julius@webncos.com",
-    from: "support@webncos.com",
-    subject: `New Client Message Webncos 📬`,
-    html: emailHtml,
-  };
+//   const msg = {
+//     to: "iamjuliuseghan@gmail.com",
+//     cc: "kelvin@webncos.com",
+//     bcc: "julius@webncos.com",
+//     from: "support@webncos.com",
+//     subject: `New Client Message Webncos 📬`,
+//     html: emailHtml,
+//   };
 
-  //Sendgrid Works...
-  await sgMail
-    .send(msg)
-    .then(() => {
-      response = {
-        status: "success",
-        message: "Your message was sent. I'll be in contact shortly.",
-      };
-    })
-    .catch((error) => {
-      response = {
-        status: "error",
-        message: `Message failed to send with error, ${error}`,
-      };
-    });
+//   //Sendgrid Works...
+//   await sgMail
+//     .send(msg)
+//     .then(() => {
+//       response = {
+//         status: "success",
+//         message: "Your message was sent. I'll be in contact shortly.",
+//       };
+//     })
+//     .catch((error) => {
+//       response = {
+//         status: "error",
+//         message: `Message failed to send with error, ${error}`,
+//       };
+//     });
 
-  //This is to check is the email from the form is subscribe or not
-  await mailchimp.lists.setListMember(listId, subscriberHash, {
-    email_address: subscribingUser.email,
-    status_if_new: "subscribed",
-    merge_fields: {
-      FNAME: subscribingUser.firstName,
-      LNAME: subscribingUser.lastName,
-      PHONE: subscribingUser.phone,
-      NOTES: subscribingUser.text,
-    },
-  });
-  return NextResponse.json(response);
-}
+//   //This is to check is the email from the form is subscribe or not
+//   await mailchimp.lists.setListMember(listId, subscriberHash, {
+//     email_address: subscribingUser.email,
+//     status_if_new: "subscribed",
+//     merge_fields: {
+//       FNAME: subscribingUser.firstName,
+//       LNAME: subscribingUser.lastName,
+//       PHONE: subscribingUser.phone,
+//       NOTES: subscribingUser.text,
+//     },
+//   });
+//   return NextResponse.json(response);
+// }
