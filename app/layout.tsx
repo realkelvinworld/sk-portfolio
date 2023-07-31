@@ -38,8 +38,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={myFont.className}>
-        <Navbar />
-        <Spotlight>{children}</Spotlight>
+        <Spotlight>
+          {" "}
+          <Navbar />
+          {children}
+        </Spotlight>
 
         {/* <Footer /> */}
         <Analytics />
