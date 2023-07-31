@@ -2,6 +2,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import localFont from "next/font/local";
 import Navbar from "../components/navbar";
+import Spotlight from "../components/spotlight";
 // import Footer from "../components/footer";
 // import { Inter } from "next/font/google";
 
@@ -38,7 +39,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={myFont.className}>
         <Navbar />
-        {children}
+        <Spotlight>{children}</Spotlight>
+
         {/* <Footer /> */}
         <Analytics />
       </body>
