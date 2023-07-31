@@ -188,7 +188,7 @@ export default function Navbar() {
                   `}
                   />
                   <span
-                    className={`h-[2px] w-[60%] transform cursor-pointer rounded-lg bg-white mix-blend-difference transition duration-300  ease-in-out
+                    className={`h-[2px] w-[70%] transform cursor-pointer rounded-lg bg-white mix-blend-difference transition duration-300  ease-in-out
                   ${openBtn ? "hidden w-0" : "w-full"}
                   `}
                   />
