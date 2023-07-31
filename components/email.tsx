@@ -58,7 +58,7 @@ export default function Contact({ formData }: { formData: formDataProps }) {
           <Text className="text-primary-200">
             © {year}. Made With Love By{" "}
             <Link href="https://kelvinworld.com" className="text-blue-700">
-              Julius Eghan
+              Kelvin Kumordzi
             </Link>
           </Text>
         </Container>
