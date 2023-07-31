@@ -52,7 +52,7 @@ export default function Page() {
     <div className=" flex flex-col w-full px-6 lg:px-14 mt-20 pb-10 lg:mb-0 ">
       <section className="border-2  border-gray-500">
         <div className="pl-10 pr-10 text-center flex items-center justify-center">
-          <h1 className=" pt-6 text-2xl tracking-wide text-gray-400 cursor-pointer">
+          <h1 className=" pt-6 text-2xl tracking-wide text-gray-300 cursor-pointer">
             TELL ME ABOUT YOUR PROJECT
           </h1>
 
@@ -65,7 +65,7 @@ export default function Page() {
         </div>
         {/* Form goes here */}
         <section className="">
-          <form className="text-gray-700" onSubmit={handleOnSubmit}>
+          <form className="text-gray-500" onSubmit={handleOnSubmit}>
             <div className="flex items-center justify-around">
               {/* Name */}
               <input
@@ -73,7 +73,7 @@ export default function Page() {
                 id="fullname"
                 name="fullname"
                 placeholder="Full Name"
-                className="bg-transparent mt-2 pt-5 pb-5 border-b  text-gray-400 text-2xl outline-none max md:w-[60vw]  lg:text-2xl"
+                className="bg-transparent mt-2 pt-5 pb-5 border-b  text-gray-300 text-2xl outline-none max md:w-[60vw]  lg:text-2xl"
                 onChange={(e) => setFullName(e.target.value)}
               />
             </div>
@@ -85,7 +85,7 @@ export default function Page() {
                 id="phonenumber"
                 name="phonenumber"
                 placeholder="Phone Number"
-                className="bg-transparent mt-8 pt-5 pb-5 border-b  text-gray-400 text-2xl outline-none md:w-[60vw] lg:text-2xl"
+                className="bg-transparent mt-8 pt-5 pb-5 border-b  text-gray-300 text-2xl outline-none md:w-[60vw] lg:text-2xl"
                 onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </div>
@@ -96,7 +96,7 @@ export default function Page() {
                 id="email"
                 name="email"
                 placeholder="Email Address"
-                className="bg-transparent mt-8 pt-5 pb-5 border-b  text-gray-400 text-2xl outline-none md:w-[60vw] lg:text-2xl"
+                className="bg-transparent mt-8 pt-5 pb-5 border-b  text-gray-300 text-2xl outline-none md:w-[60vw] lg:text-2xl"
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
@@ -106,7 +106,7 @@ export default function Page() {
                 id="project"
                 name="project"
                 placeholder="Describe your project"
-                className="bg-transparent mt-8 pt-5 pb-5 border-b text-gray-400 text-2xl outline-none md:w-[60vw] lg:text-2xl"
+                className="bg-transparent mt-8 pt-5 pb-5 border-b text-gray-300 text-2xl outline-none md:w-[60vw] lg:text-2xl"
                 onChange={(e) => setMessage(e.target.value)}
               />
             </div>
@@ -119,7 +119,7 @@ export default function Page() {
                 className="border-4 border-gray-600 pt-2 pb-2 pl-8 pr-8 rounded-3xl text-2xl hover:transform hover:scale-110 transition duration-300 hover:border-gray-200 hover:text-gray-200 mb-4 lg:text-2xl "
               />
               {/* Terms and policies */}
-              <p className="text-center px-6 text-xl text-gray-500">
+              <p className="text-center px-6 text-xl text-gray-400">
                 By Submiting You Have Agreed To Our <br />{" "}
                 <span className="text-gray-200">Terms & Agreements </span>
                 and <span className="text-gray-200"> Privacy Policy </span>

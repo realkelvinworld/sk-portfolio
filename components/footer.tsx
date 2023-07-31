@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Socials } from "../components/db";
+import CopyrightText from "../components/copyright";
 import Link from "next/link";
 
 function Footer() {
@@ -9,9 +10,7 @@ function Footer() {
       <hr className="bg-gray-700  h-0.5" />
       <div className="flex flex-wrap-reverse justify-around items-center pt-5">
         <div>
-          <p className="text-gray-400 text-center">
-            © 2023 kelvinkumordzi. All rights reserved
-          </p>
+          <CopyrightText />
         </div>
         <div className="px-2">
           <div className="flex items-center space-x-4">

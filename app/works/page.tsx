@@ -14,7 +14,7 @@ function page() {
           <h1 className="text-3xl lg:text-5xl  bg-gradient-to-r from-gray-500 to-gray-100 bg-clip-text text-transparent">
             "Experience Creativity"
           </h1>
-          <p className="text-gray-400 text-lg my-4 w-auto lg:w-96">
+          <p className="text-gray-300 text-lg my-4 w-auto lg:w-96">
             I've come a long way from the begining.I'm not there yet , but I'm
             on my way
           </p>
@@ -26,7 +26,7 @@ function page() {
             <span></span>
           </div>
           <div>
-            <ul className="text-lg text-left lg:text-right text-gray-400 mt-5 list-square ">
+            <ul className="text-lg text-left lg:text-right text-gray-300 mt-5 list-square ">
               <li>Projects(Design & Develop)</li>
             </ul>
           </div>
@@ -44,8 +44,8 @@ function page() {
                   <motion.div key={id} whileHover={{ scale: 1.1 }}>
                     <Link href={link}>
                       <ul className="py-5 ">
-                        <li className="text-4xl lg:text-6xl  text-right text-gray-600 hover:text-gray-400 justify-center rounded-full">
-                          <span className="text-sm font-thin text-gray-400">
+                        <li className="text-4xl lg:text-6xl  text-right text-gray-600 hover:text-gray-300 justify-center rounded-full">
+                          <span className="text-sm font-thin text-gray-300">
                             {description}
                           </span>
                           {name}

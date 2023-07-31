@@ -83,7 +83,7 @@ export default function Navbar() {
                   <Image src={Logo} alt="Logo" className="" />
                 </div>
               </Link> */}
-              <div className="flex text-3xl text-gray-400">
+              <div className="flex text-3xl text-gray-300">
                 {Navlinks.map((data) => {
                   const { id, link, name } = data;
                   return (
@@ -128,7 +128,7 @@ export default function Navbar() {
                   <div className="absolute inset-0 z-10  bg-opacity-20 bg-gradient-to-t from-primary-border/50 via-transparent to-primary-border/50" />
                   <div className="relative z-20 flex w-full justify-between ">
                     <div className="w-10 "></div>
-                    <div className="flex flex-1 flex-col items-center text-gray-400 ">
+                    <div className="flex flex-1 flex-col items-center text-gray-300 ">
                       {Navlinks.map((data, i) => {
                         const { id, link, name } = data;
                         return (

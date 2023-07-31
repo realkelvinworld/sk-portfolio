@@ -8,16 +8,16 @@ export default function Home() {
       <section className="mt-24 border-2 px-10 border-gray-500">
         {/* <hr className="bg-gray-700  h-0.5" /> */}
         <div className="pb-20">
-          <h1 className="text-5xl lg:text-7xl pt-3 bg-gradient-to-r from-gray-500 to-gray-100 bg-clip-text text-transparent">
+          <h1 className="text-5xl lg:text-7xl pt-3 bg-gradient-to-r from-gray-400 to-gray-300 bg-clip-text text-transparent">
             I'm Kelvin Kumordzi{" "}
           </h1>
-          <ul className="text-xl text-gray-400 mt-5 list-disc">
+          <ul className="text-xl text-gray-300 mt-5 list-disc">
             <li>Front-end web Developer</li>
             <li>UI/UX designer</li>
           </ul>
         </div>
         {/* second section */}
-        <div className="flex justify-between flex-col  lg:flex-row text-gray-400 ">
+        <div className="flex justify-between flex-col  lg:flex-row text-gray-300 ">
           <div className="w-auto lg:w-96 my-8">
             <h2 className="text-2xl lg:text-4xl ">
               I build Modern, and Effective websites that increase Customer
