@@ -5,13 +5,10 @@ export type BtnProps = {
 };
 export type formDataProps = {
   fullName: string;
-  lastName: string;
-  emailAddress: string;
+  email: string;
   contact: number;
   messageID: string;
-  companyName: string;
   message: string;
-  services: string;
 };
 export type BtnIconProps = {
   text: string;

@@ -7,13 +7,9 @@ import { useState } from "react";
 
 function page() {
   //   const [SubmitBtn, setSubmitBtn] = useState("Submit Message");
-  //   const [firstName, setFirstName] = useState("");
-  //   const [lastName, setLastName] = useState("");
-  //   const [contact, setContact] = useState("");
-  //   const [emailAddress, setEmailAddress] = useState("");
-  //   const [companyName, setCompanyName] = useState("");
-  //   const [message, setMessage] = useState("");
-  //   const [services, setServices] = useState(servicename);
+  //   const [fullName, setFullName] = useState("");
+  //   const [phoneNumber, setPhoneNumber] = useState("");
+  //   const [email, setEmail] = useState("");
   //   const messageID = `#${services.slice(0, 1)}${newtoday}${contact.slice(
   //     -3
   //   )}${firstName.slice(0, 3)}`;
@@ -22,13 +18,11 @@ function page() {
 
   //   const formData: formDataProps = {
   //     fullName,
-  //     emailAddress,
-  //     contact: Number(contact),
+  //     email,
+  //     phoneNumber: Number(contact),
   //     messageID,
-  //     companyName,
   //     message,
-  //     services,
-  //     lastName: "",
+  //     
   //   };
 
   // when form is submitted
@@ -81,16 +75,7 @@ function page() {
                 className="bg-transparent mt-2 pt-5 pb-5 border-b  text-gray-400 text-2xl outline-none max md:w-[60vw]  lg:text-2xl"
               />
             </div>
-            {/* Last name */}
-            {/* <div className="flex items-center justify-around">
-              <input
-                type="text"
-                id="lastname"
-                name="lastname"
-                placeholder="Last Name"
-                className="bg-transparent mt-8 pt-5 pb-5 border-b  text-gray-400 text-2xl outline-none md:w-[60vw] lg:text-2xl"
-              />
-            </div> */}
+
             {/* Contact */}
             <div className="flex items-center justify-around">
               <input
