@@ -90,4 +90,10 @@ export const works = [
     link: "https://dicereollgame.netlify.app/",
     description: "A strategy game",
   },
+  {
+    id: 6,
+    name: "UI/UX Board",
+    link: "",
+    description: "A figma board with all my UI/UX designs on them ",
+  },
 ];
