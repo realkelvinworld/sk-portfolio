@@ -1,7 +1,7 @@
 export const Navlinks = [
   { id: 1, name: "projects", link: "projects" },
   { id: 2, name: "contact", link: "/contact" },
-  { id: 3, name: "blog", link: "https://www.webncos.com/blog" },
+  { id: 3, name: "blog", link: "/blog" },
   // { id: 3, name: "blog", link: "/blog" },
 ];
 import { GitHub, Twitter, Mail, Linkedin } from "react-feather";
