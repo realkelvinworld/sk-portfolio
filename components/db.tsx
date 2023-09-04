@@ -85,12 +85,12 @@ export const works = [
     // decription: "An events site template",
     description: "An events site template",
   },
-  {
-    id: 5,
-    name: "Dice Roll",
-    link: "https://dicereollgame.netlify.app/",
-    description: "A strategy game",
-  },
+  // {
+  //   id: 5,
+  //   name: "Dice Roll",
+  //   link: "https://dicereollgame.netlify.app/",
+  //   description: "A strategy game",
+  // },
   {
     id: 6,
     name: "UI/UX Board",
