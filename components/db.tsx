@@ -94,7 +94,7 @@ export const works = [
   {
     id: 6,
     name: "UI/UX Board",
-    link: "",
+    link: "https://www.figma.com/file/Ka6T0tPqXXK5c34NUFqVaK/My-Board?type=design&node-id=0%3A1&mode=design&t=h5lFyNFn4yVeORLr-1",
     description: "A figma board with all my UI/UX designs on them ",
   },
 ];
