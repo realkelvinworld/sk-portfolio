@@ -61,20 +61,20 @@ export const Socials = [
 
 export const works = [
   {
-    id: 1,
+    id: 5,
     name: "Webncos",
     link: "https://webncos.com",
     description: "A development agency",
   },
   {
-    id: 2,
+    id: 1,
     name: "Genelab Ghnana",
     link: "https://genelabgh.com",
     description:
       "A private medical diagnostics molecular and general laboratory service",
   },
   {
-    id: 3,
+    id: 2,
     name: "Pentecost University IDC",
     link: "http://pentvarsidc.com/",
     description: "A dedicated tech department",
@@ -87,7 +87,7 @@ export const works = [
     description: "An events site template",
   },
   {
-    id: 5,
+    id: 3,
     name: "Buildaf Ghana",
     link: "https://buildafghana.com/",
     description: "A leading real estate developer",
