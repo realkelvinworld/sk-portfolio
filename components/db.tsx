@@ -68,9 +68,10 @@ export const works = [
   },
   {
     id: 2,
-    name: "Just Guess",
-    link: "https://justguess.netlify.app/",
-    description: "A guessing game",
+    name: "Genelab Ghnana",
+    link: "https://genelabgh.com",
+    description:
+      "A private medical diagnostics molecular and general laboratory service",
   },
   {
     id: 3,
@@ -85,12 +86,12 @@ export const works = [
     // decription: "An events site template",
     description: "An events site template",
   },
-  // {
-  //   id: 5,
-  //   name: "Dice Roll",
-  //   link: "https://dicereollgame.netlify.app/",
-  //   description: "A strategy game",
-  // },
+  {
+    id: 5,
+    name: "Buildaf Ghana",
+    link: "https://buildafghana.com/",
+    description: "A leading real estate developer",
+  },
   {
     id: 6,
     name: "UI/UX Board",
