@@ -61,12 +61,6 @@ export const Socials = [
 
 export const works = [
   {
-    id: 5,
-    name: "Webncos",
-    link: "https://webncos.com",
-    description: "A development agency",
-  },
-  {
     id: 1,
     name: "Genelab Ghnana",
     link: "https://genelabgh.com",
@@ -80,6 +74,12 @@ export const works = [
     description: "A dedicated tech department",
   },
   {
+    id: 3,
+    name: "Buildaf Ghana",
+    link: "https://buildafghana.com/",
+    description: "A leading real estate developer",
+  },
+  {
     id: 4,
     name: "Events",
     link: "https://eventsp1.netlify.app/",
@@ -87,10 +87,10 @@ export const works = [
     description: "An events site template",
   },
   {
-    id: 3,
-    name: "Buildaf Ghana",
-    link: "https://buildafghana.com/",
-    description: "A leading real estate developer",
+    id: 5,
+    name: "Webncos",
+    link: "https://webncos.com",
+    description: "A development agency",
   },
   {
     id: 6,
