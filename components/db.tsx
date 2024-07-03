@@ -61,6 +61,12 @@ export const Socials = [
 
 export const works = [
   {
+    id: 1,
+    name: "Aviot Capitals",
+    link: "https://aviotcapitals.com/",
+    description: "A trading and invsetment platform",
+  },
+  {
     id: 2,
     name: "Genelab Ghana",
     link: "https://genelabgh.com",
@@ -86,12 +92,7 @@ export const works = [
   //   // decription: "An events site template",
   //   description: "An events site template",
   // },
-  {
-    id: 1,
-    name: "Aviot Capitals",
-    link: "https://aviotcapitals.com/",
-    description: "A trading and invsetment platform",
-  },
+
   // {
   //   id: 5,
   //   name: "UI/UX Board",
