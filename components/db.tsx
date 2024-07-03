@@ -61,20 +61,20 @@ export const Socials = [
 
 export const works = [
   {
-    id: 1,
-    name: "Genelab Ghnana",
+    id: 2,
+    name: "Genelab Ghana",
     link: "https://genelabgh.com",
     description:
       "A private medical diagnostics molecular and general laboratory service",
   },
   {
-    id: 2,
+    id: 3,
     name: "Pentecost University IDC",
     link: "http://pentvarsidc.com/",
     description: "A dedicated tech department",
   },
   {
-    id: 3,
+    id: 4,
     name: "Buildaf Ghana",
     link: "https://buildafghana.com/",
     description: "A leading real estate developer",
@@ -87,15 +87,15 @@ export const works = [
   //   description: "An events site template",
   // },
   {
-    id: 4,
-    name: "Webncos",
-    link: "https://webncos.com",
-    description: "A development agency",
+    id: 1,
+    name: "Aviot Capitals",
+    link: "https://aviotcapitals.com/",
+    description: "A trading and invsetment platform",
   },
-  {
-    id: 5,
-    name: "UI/UX Board",
-    link: "https://www.figma.com/file/Ka6T0tPqXXK5c34NUFqVaK/My-Board?type=design&node-id=0%3A1&mode=design&t=h5lFyNFn4yVeORLr-1",
-    description: "A figma board with all my UI/UX designs on them ",
-  },
+  // {
+  //   id: 5,
+  //   name: "UI/UX Board",
+  //   link: "https://www.figma.com/file/Ka6T0tPqXXK5c34NUFqVaK/My-Board?type=design&node-id=0%3A1&mode=design&t=h5lFyNFn4yVeORLr-1",
+  //   description: "A figma board with all my UI/UX designs on them ",
+  // },
 ];
