@@ -62,9 +62,9 @@ export const Socials = [
 export const works = [
   {
     id: 1,
-    name: "Aviot Capitals",
-    link: "https://aviotcapitals.com/",
-    description: "A trading and invsetment platform",
+    name: "Cointag",
+    link: "https://cointag.app",
+    description: "An emarging fintech company",
   },
   {
     id: 2,
