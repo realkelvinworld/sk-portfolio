@@ -84,7 +84,12 @@ export const works = [
     name: "Buildaf Ghana",
     link: "https://buildafghana.com/",
     description: "A leading real estate developer",
-  },
+  },{
+    id:5,
+    name:"StashWealthy",
+    link:"https://stashwealthy.vercel.app",
+    description:"coming  soon..."
+  }
   // {
   //   id: 4,
   //   name: "Events",
