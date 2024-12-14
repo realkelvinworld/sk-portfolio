@@ -87,7 +87,7 @@ export const works = [
   },{
     id:5,
     name:"StashWealthy",
-    link:"https://stashwealthy.vercel.app",
+    link:"https://stashwealthysite.vercel.app",
     description:"coming  soon..."
   }
   // {
