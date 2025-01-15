@@ -64,31 +64,37 @@ export const works = [
     id: 1,
     name: "Cointag",
     link: "https://cointag.app",
-    description: "An emarging fintech company",
+    description: "An emerging fintech company",
   },
   {
-    id: 2,
+      id: 2,
+    name: "Glam with Nia",
+    link: "https://glamwithnia.com",
+    description: "An emerging beauty salon",
+  },
+  {
+    id: 3,
     name: "Genelab Ghana",
     link: "https://genelabgh.com",
     description:
       "A private medical diagnostics molecular and general laboratory service",
   },
   {
-    id: 3,
+    id: 4,
     name: "Pentecost University IDC",
     link: "http://pentvarsidc.com/",
     description: "A dedicated tech department",
   },
   {
-    id: 4,
+    id: 5,
     name: "Buildaf Ghana",
     link: "https://buildafghana.com/",
     description: "A leading real estate developer",
   },{
-    id:5,
+    id:6,
     name:"StashWealthy",
     link:"https://stashwealthysite.vercel.app",
-    description:"coming  soon..."
+    description:"WIP"
   }
   // {
   //   id: 4,
