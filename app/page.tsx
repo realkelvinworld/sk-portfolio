@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <main className=" mt-10 px-10 lg:px-14 pb-10 lg:mb-0 ">
       <section className="mt-24 border-2 px-10 border-gray-500">
-        {/* <hr className="bg-gray-700  h-0.5" /> */}
         <div className="pb-20">
           <h1 className="text-5xl lg:text-7xl pt-3 bg-gradient-to-r from-gray-400 to-gray-300 bg-clip-text text-transparent">
             I'm Kelvin Kumordzi{" "}
